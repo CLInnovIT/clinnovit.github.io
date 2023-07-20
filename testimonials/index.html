@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="/dist/stackedCards.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Dancing+Script&family=Jacques+Francois+Shadow&family=Lato:wght@300&family=Open+Sans:wght@300&family=Rambla:ital,wght@0,700;1,400&family=Roboto:wght@300&family=Secular+One&family=Ubuntu&family=Varela+Round&family=Wix+Madefor+Display&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- <div id="container1">
+        <div class="box1">
+            <img class="Vector" src="assets/Vector (1).png" alt=""> CLInnovIT provided exceptional website development
+            services for our laboratory. Their professionalism,
+            technical expertise, and attention to detail surpassed our expectations. We highly recommend CLInnovIT for
+            anyone seeking top-notch website development solutions.
+            <img class="Vector" src="assets/Vector.png" alt="">
+            <div>
+                <img class="BMR" src="/assets/BMR.jpeg.png" alt="" sizes="30px">
+            </div>
+        </div>
+    </div>
+    <div id="container2">
+
+    </div> -->
+    <div id="container3">
+        <h2>Who We Work With</h2>
+        <div class="container-fixed stacked-cards stacked-cards-slide">
+
+            <ul>
+                <li><img src="/assets/hdfc-bank.jpg" alt=""></li>
+                <li><img src="/assets/Axis-Bank-logo (1).jpg" alt=""></li>
+                <li><img src="/assets/Anchor_Electricals_Pvt._Ltd.-Logo.wine.png" alt=""></li>
+                <li><img src="/assets/Sonata.webp" alt=""></li>
+                <li><img src="/assets/myntra-1.jpg" alt=""></li>
+            </ul>
+        </div>
+
+
+        <script src="/dist/stackedCards.min.js"></script>
+        <script>
+            var stackedCardSlide = new stackedCards({
+                selector: '.stacked-cards-slide',
+                layout: "slide",
+                transformOrigin: "center",
+            });
+
+            stackedCardSlide.init();
+        </script>
+
+    </div>
+    <div id="container4">
+        <p>Some More Clients</p>
+
+        <ul>
+            <li> <a href="#"><img src="assets/aruba-150x150.png.png"></a></li>
+            <li><a href="#"><img src="assets/logo_barracuda_primary-150x150.png.png"></a></li>
+            <li><a href="#"><img src="assets/partner-logo-150x150.png.png"></a></li>
+            <li><a href="#"><img
+                        src="assets/Partner_logo_cisco-meraki-trademark-digital-full-color-150x150.png.png"></a>
+            </li>
+            <li><a href="#"><img src="assets/DT_AuthorizedPartner_4C.png.png"></a></li>
+            <li><a href="#"><img src="assets/ExaGrid_Logo_noTag_2C-150x150.png.png"></a></li>
+            <li><a href="#"><img src="assets/Fortinet-logo-rgb-black-150x150.png.png"></a></li>
+            <li><a href="#"><img src="assets/HP_Blue_SpotU-150x150.png.png"></a></li>
+            <li><a href="#"><img src="assets/G_PM_PR_PLAT_PAR_RGB_DIGITAL-150x150.png.png"></a></li>
+            <li><a href="#"><img src="assets/Microsoft-logo_rgb_c-gray-150x150.png.png"></a></li><a href="#"></a>
+            <li><a href="#"><img src="assets/Milestone-Logo-Clear-Blue-150x150.png.png"></a></li>
+            <li><a href="#"><img src="assets/Pure-Storage-Logo-Full-Color-150x150.png.png"></a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

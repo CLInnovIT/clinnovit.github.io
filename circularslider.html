@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Move Contents in Circle Example</title>
+    <style>
+        .ccontainer {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+            background-color: aqua;
+
+        }
+
+        .cslide {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ccontainer">
+
+
+        <div class="cslide">a</div>
+        <div class="cslide">b</div>
+        <div class="cslide">c</div>
+        <div class="cslide">d</div>
+    </div>
+
+
+    <script>
+        // JavaScript code
+        function getCenterLocation(element) {
+            const rect = element.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            return { x: centerX, y: centerY };
+        }
+
+        function relocateCenterToGivenLocation(element, targetPoint, duration = 200) {
+            const centerLocation = getCenterLocation(element);
+            const offsetX = targetPoint.x - centerLocation.x;
+            const offsetY = targetPoint.y - centerLocation.y;
+
+            const computedStyle = getComputedStyle(element);
+            const transformMatrix = new DOMMatrix(computedStyle.transform);
+
+            // Get the current translations
+            const currentTranslateX = transformMatrix.e;
+            const currentTranslateY = transformMatrix.f;
+
+            // Reset previous translations
+            transformMatrix.e = 0;
+            transformMatrix.f = 0;
+
+            // Apply the new translation
+            transformMatrix.e = currentTranslateX + offsetX;
+            transformMatrix.f = currentTranslateY + offsetY;
+
+            // Apply the new transform with smooth transition to the element
+            element.style.transition = `transform ${duration}ms ease`;
+            element.style.transform = transformMatrix.toString();
+            setTimeout(() => {
+                element.style.transition = '';
+            }, duration);
+        }
+
+        function getPointsInCircle(radius, centerPoint, n) {
+            const points = [];
+
+            const angleIncrement = (2 * Math.PI) / n;
+            for (let i = 0; i < n; i++) {
+                const angle = i * angleIncrement;
+                const x = centerPoint.x + radius * Math.cos(angle);
+                const y = centerPoint.y + radius * Math.sin(angle);
+                points.push({ x, y });
+            }
+
+            return points;
+        }
+
+        function getslideelements(containerClass, contentClass) {
+            const container = document.querySelector(`.${containerClass}`);
+            return container.querySelectorAll(`.${contentClass}`);
+        }
+
+        function arrangeDivsInPoints(divs, points, duration = 200) {
+            // Position the divs at the given points
+            divs.forEach((div, i) => {
+                const point = points[i];
+                relocateCenterToGivenLocation(div, point, duration);
+            });
+        }
+
+        function selectElementsAtIntervals(list, interval, startIndex = 0, n = list.length) {
+            const selectedElements = [];
+
+            // Helper function to perform modulo operation correctly for negative numbers
+            function modulo(n, m) {
+                return ((n % m) + m) % m;
+            }
+
+            let currentIndex = modulo(startIndex, list.length);
+            for (let i = 0; i < n; i++) {
+                const element = list[currentIndex];
+                selectedElements.push(element);
+
+                currentIndex = modulo(currentIndex + interval, list.length);
+            }
+
+            return selectedElements;
+        }
+
+        // Usage example
+        const containerClass = 'ccontainer';
+        const contentClass = 'cslide';
+        const radius = 100;
+        const centerPoint = { x: 300, y: 300 };
+        const numDivs = 4;
+
+        const points = getPointsInCircle(radius, centerPoint, 3 * numDivs);
+        let ps = selectElementsAtIntervals(points, 3)
+        let divs = getslideelements(containerClass, contentClass)
+        arrangeDivsInPoints(divs, ps);
+
+
+
+        function rotatetostep(divs, points, interval, startIndex = 0, duration = 200) {
+            let ps = selectElementsAtIntervals(points, interval, startIndex)
+            arrangeDivsInPoints(divs, ps, duration)
+        }
+
+        function rotatebydstep(divs, points, interval, currentIndex, direction=1, duration = 200) {
+            rotatetostep(divs, points, interval, currentIndex + direction, duration)
+        }
+
+        function rotatebydsteps(divs, points, interval, currentIndex, n, direction=1, duration = 200) {
+            let counter = 0;
+            function rotate() {
+                if (counter < n && counter > n*-1) {
+                    const currentIndexWithOffset = currentIndex + counter;
+                    rotatebydstep(divs, points, interval, currentIndexWithOffset, direction, duration);
+                    counter=counter+direction;
+                    setTimeout(rotate, duration/2);
+                }
+            }
+            rotate();
+        }
+        let slideindex=0
+        function autorotate(divs, points, interval, currentIndex, direction=1, duration = 200, timeinterval=1000) {
+            slideindex=currentIndex
+            function hf() {
+                rotatebydsteps(divs, points, interval, slideindex, interval, direction, duration)
+                slideindex=slideindex+interval*direction
+                setTimeout(hf, timeinterval)
+            }
+
+            hf()
+            
+        }
+
+
+        function rotateonestep(divs, points, interval, currentIndex=slideindex, direction=1, duration = 200) {
+            rotatebydsteps(divs, points, interval, currentIndex, interval, direction, duration)
+        }
+
+        autorotate(divs, points, 3,0)
+
+
+
+
+    </script>
+</body>
+
+</html>

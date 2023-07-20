@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Slider</title>
+  </head>
+  <body>
+    <div class="slider">
+      <div class="heading">
+        <p class="head1">HOW WE ACHIEVE.</p>
+        <p class="head2"></p>
+        <p class="head3">We build for Industry leading businesses across well known industries.</p>
+      </div>
+      <div class="circular-slider circular-slider-1">
+        <div class="wrapper" style="width: 100%;height: 500px;">
+          <div class="controls">
+            <div class="controls__left">
+              <div class="icon-wrapper"><i class="far fa-arrow-alt-circle-left"></i></div>
+            </div>
+            <div class="controls__right">
+              <div class="icon-wrapper"><i class="far fa-arrow-alt-circle-right"></i></div>
+            </div>
+            <div class="controls__autoplay controls__autoplay_running">
+              <div class="icon-wrapper">
+                <div class="pause"><i class="far fa-pause-circle"></i></div>
+                <div class="run"><i class="far fa-play-circle"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="slides-holder">
+            <div class="slides-holder__item slides-holder__item_active"><img src="Images/1_img.jpg" alt="img"/></div>
+            <div class="slides-holder__item"><img src="Images/2_img.jpg" alt="img"/></div>
+            <div class="slides-holder__item"><img src="Images/3_img.jpg" alt="img"/></div>
+            <div class="slides-holder__item"><img src="Images/4_img.jpg" alt="img"/></div>
+            <div class="slides-holder__item"><img src="Images/5_img.jpg" alt="img"/></div>
+            <div class="slides-holder__item"><img src="Images/6_img.jpg" alt="img"/></div>
+            <div class="slides-holder__item"><img src="Images/7_img.jpg" alt="img"/></div>
+            <div class="slides-holder__item"><img src="Images/8_img.jpg" alt="img"/></div>
+          </div>
+          <div class="descriptions">
+            <div class="descriptions__item descriptions__item_visible">
+              <h1>Conduct Market Research</h1>
+            </div>
+            <div class="descriptions__item">
+              <h1>Apply Neuroscience Principles</h1>
+            </div>
+            <div class="descriptions__item">
+              <h1>Utilize A/B testing</h1>
+            </div>
+            <div class="descriptions__item">
+              <h1>Personalize Marketing Efforts</h1>
+            </div>
+            <div class="descriptions__item">
+              <h1>Optimize Website Design</h1>
+            </div>
+            <div class="descriptions__item">
+              <h1>Implement Emotional Branding</h1>
+            </div>
+            <div class="descriptions__item">
+              <h1>Optimize Website Design</h1>
+            </div>
+            <div class="descriptions__item">
+              <h1>Personalize Marketing Efforts</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/circular-slider.js"></script><script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <style>
+        .circular-slider {
+  width: 307.2%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  background-color: #122266;
+  background-image: url(/Images/blur_back.png);
+}
+.circular-slider .wrapper {
+ background-color: #FFF;
+}
+.circular-slider .wrapper .controls__left, .circular-slider .wrapper .controls__right, .circular-slider .wrapper .controls__autoplay {
+  position: absolute;
+  z-index: 101;
+  -webkit-transition: .6s all;
+  -o-transition: .6s all;
+  transition: .6s all;
+}
+.circular-slider .wrapper .controls__left:hover .icon-wrapper, .circular-slider .wrapper .controls__right:hover .icon-wrapper, .circular-slider .wrapper .controls__autoplay:hover .icon-wrapper {
+  font-size: 1.7em;
+  opacity: 1;
+}
+.circular-slider .wrapper .controls__left .icon-wrapper, .circular-slider .wrapper .controls__right .icon-wrapper, .circular-slider .wrapper .controls__autoplay .icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #8EB8E5;
+  font-size: 1.5em;
+  opacity: .7;
+}
+.circular-slider .wrapper .controls__left, .circular-slider .wrapper .controls__right { top: 50%; }
+.circular-slider .wrapper .controls__left {
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.circular-slider .wrapper .controls__left:hover { left: 0; }
+.circular-slider .wrapper .controls__right {
+  right: 0;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+.circular-slider .wrapper .controls__autoplay {
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+.circular-slider .wrapper .controls__autoplay_running .pause { display: block; }
+.circular-slider .wrapper .controls__autoplay_running .run { display: none; }
+.circular-slider .wrapper .controls__autoplay_paused .pause { display: none; }
+.circular-slider .wrapper .controls__autoplay_paused .run { display: block; }
+.circular-slider .wrapper .slides-holder {
+  border-radius: 50%;
+  border: 2px dotted black;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+.circular-slider .wrapper .slides-holder__item {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .3s linear all;
+  -o-transition: .3s linear all;
+  transition: .3s linear all;
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+}
+.circular-slider .wrapper .slides-holder__item img {
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.circular-slider .wrapper .slides-holder__item_active {
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+}
+.circular-slider .wrapper .descriptions {
+  position: absolute;
+  bottom: 0%;
+  z-index: 0;
+}
+
+.circular-slider .wrapper .descriptions__item {
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: opacity 0s 0s linear;
+  -o-transition: opacity 0s 0s linear;
+  transition: opacity 0s 0s linear;
+}
+.circular-slider .wrapper .descriptions__item_visible {
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: opacity .6s 0s linear;
+  -o-transition: opacity .6s 0s linear;
+  transition: opacity .6s 0s linear;
+}
+.circular-slider .wrapper .descriptions__item h1, .circular-slider .wrapper .descriptions__item .description {
+  font-family: Helvetica, sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 50px;
+}
+.circular-slider .wrapper .descriptions__item h1 {
+  font-size: 30px;
+  padding-top: 5px;
+}
+.circular-slider .wrapper .descriptions__item .description {
+  font-size: 20px;
+  margin-top: 5px;
+  padding: 0% 10%;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow-y: hidden;
+}
+ .slider{
+    height: 500px;
+    width: 500px;
+    padding: 0;
+} 
+    </style>
+    <script>
+        var sn=new Slider( document.querySelector( '.circular-slider-1' ), 100, 15, 600, 2500 );
+        
+        // Slider.prototype.setSize(8000)
+    </script>
+  </body>
+</html>

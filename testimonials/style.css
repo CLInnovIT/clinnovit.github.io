@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container1 {
+    width: 100%;
+    background-color: #122266;
+    height: 30rem;
+}
+
+#container1 .box1 {
+    justify-content: center;
+    background-color: white;
+    padding: 2.5rem 2rem 0rem 2rem;
+    position: absolute;
+    width: 60%;
+    height: auto;
+    top: 20%;
+    left: 20%;
+    border-radius: 25px;
+    text-align: center;
+    font-size: small;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+
+#container1 .Vector {
+    position: relative;
+
+    width: 1rem;
+}
+
+#container1 .BMR {
+    position: relative;
+    border-radius: 35rem;
+    width: 12%;
+  top: 2.5rem;
+ 
+}
+
+#container2 {
+    width: 100%;
+    background-color: #152672;
+    height: 30rem;
+}
+
+#container3 {
+    padding-top: 4.5rem;
+    background-color: #FCA311;
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 700;
+    /* line-height: 32px;
+    letter-spacing: 0em; */
+    text-align: center;
+    width: 100%;
+    height: 40rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+
+/* .stacked-cards h2 {
+    text-align: center;
+    position: relative;
+    top: -20px;
+} */
+.container-fuild {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.container-fixed {
+    max-width: 767px;
+    margin: 0 auto;
+}
+
+
+.stacked-cards {
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+
+
+.stacked-cards li {
+    height: 250px;
+}
+
+@media (max-width: 767px) {
+    .stacked-cards li {
+        height: 180px;
+    }
+}
+
+.stacked-cards li {
+    background-color: white;
+}
+
+
+
+
+#container3 ul li img{
+    width: 100%;
+    height: 250px;
+   background-position: center;
+   
+   
+}  
+
+
+#container4 {
+    padding: 6rem;
+    text-align: center;
+    width: 100%;
+    /* height: 20rem; */
+    /* font-family: 'Arial Narrow', Arial, sans-serif; */
+    /* font-size: 2.5rem; */
+
+    align-items: center
+}
+
+/* #container4 p {
+    border-bottom: 2px solid #000;
+    width: 38rem;
+
+} */
+
+#container4 ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+#container4 ul li {
+    padding: 2.5rem 4rem;
+}
+
+#container4 img{
+    width: 100px;
+    height: 100px;
+}

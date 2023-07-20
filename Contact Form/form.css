@@ -1,0 +1,132 @@
+.form_container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 46.5em;
+    width: 100%;
+    border-radius: 37px;
+    background-color: #FCA311;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 25%;
+    width: 60%;
+    margin-left: 18%;
+    margin-top: 3%;
+    padding: 2%;
+    font-family: sans-serif;
+    font-weight:700;
+    text-decoration: #000;
+}
+
+.location{
+    align-self: center;
+    width: 23%;
+    height: 85%;
+    text-align: center;
+}
+
+.contact{
+    background-color: #ffd68fe2;
+    align-self: center;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.mail{
+    align-self: center;
+    width: 23%;
+    height: 85%;
+    text-align: center;
+}
+
+.customerInfo {
+    position: absolute;
+    top: 40%;
+    align-self: center;
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+    background-color: #E5E5E5;
+    border-radius: 75.646px 75.646px 0 0;
+    font-family: sans-serif;
+    
+}
+
+.formHead {
+    margin: 45px;
+}
+
+form{
+    margin-left: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left_section{
+    width: 55%;
+}
+
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#name, #mail, #contact {
+    width: 55%;
+    height: 37px;
+    border-radius: 15px;
+    outline: none;
+    border: 0.8px solid rgba(0, 0, 0, 0.565);
+    padding: 3px;
+    font-size: medium;
+}
+
+label {
+    font-size: large;
+    font-weight: 700;
+    padding: 5px;
+    padding-bottom: 5px;
+}
+
+.textMessage {
+    margin-top: 5%;
+}
+
+textarea{
+    width: 150%;
+    height: 30%;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.nextBtn{
+    margin-left: 35%;
+    height: 45%;
+    width: 30%;
+    background-color: #122266;
+    align-self: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 18px;
+    font-size: larger;
+}
+ .btn{
+    display: flex;
+    width: 38%;
+    height: 20%;
+    position: absolute;
+}
+
+.nextBtn:hover{
+    cursor: pointer;
+    height: 47%;
+    width: 32%;
+    font-size: larger;
+    transition: .2s ease-out;
+}
