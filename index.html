@@ -1,998 +1,1219 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ClinnovIT - Your Complete IT Solutions</title>
-  <meta name="description"
-    content="ClinnovIT offers comprehensive IT solutions for businesses and individuals. From software development to IT consulting, our expert team delivers high-quality services to meet your technology needs. Explore our range of services and let ClinnovIT be your complete IT solution provider.">
-
-  <script src="https://kit.fontawesome.com/bc562c5e31.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link href="dist/stackedCards.css" rel="stylesheet" />
-  <link rel="stylesheet" href="circular_slider/css/main.css" />
-  <link rel="stylesheet" href="testimonials/style.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Dancing+Script&family=Jacques+Francois+Shadow&family=Lato:wght@300&family=Open+Sans:wght@300&family=Rambla:ital,wght@0,700;1,400&family=Roboto:wght@300&family=Secular+One&family=Ubuntu&family=Varela+Round&family=Wix+Madefor+Display&display=swap');
-  </style>
-  <link rel="stylesheet" href="./Styles/glightbox.min.css" />
-  <script src="./Styles/glightbox.min.js.download"></script>
-  <link href="./Styles/style.css" rel="stylesheet" />
-
-  <!-- Sweet Alert -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <style>
-    #myProgress {
-      width: 100%;
-      background-color: white;
-      position: fixed;
-      height: 5px;
-      z-index: 1;
-    }
-
-    #myBar {
-      width: 1%;
-      height: 5px;
-      background-color: #0d6efd;
-    }
-  </style>
-</head>
-
-<body>
-  <div id="headerdiv">
-
-
-    <header>
-      <img class="header-logo" src="images/logo.png" alt="logo">
-      <nav>
-        <div class="header-menu-toggle" onclick="toggleMenu()">
-          <div class="header-bar"></div>
-          <div class="header-bar"></div>
-          <div class="header-bar"></div>
-        </div>
-        <ul class="header-nav-links" id="navLinks">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#real-contact">Contact</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Pricing</a></li>
-        </ul>
-      </nav>
-
-    </header>
-    <div id="myProgress">
-      <div id="myBar"></div>
-    </div>
-  </div>
-
-  <div class="page-container">
-    <div class="yellow-section">
-      <div class="text-section">
-        <div class="text-video">
-          <span class="section-title">CLInnovIT</span>
-        </div>
-        <div class="content">
-          <div class="content-text">
-            <p>Merging psychology and technology for your digital success</p>
-            <p>from <a href="https://www.chakrabortyandlahkarinnovations.com/" style="color: black;">Chakraborty and
-                Lahkar Innovations Pvt. Ltd.</a></p>
-            <button class="section-button" onclick='window.location.href="#real-contact"'>Get in Touch <i
-                class="fa-solid fa-circle-arrow-right"></i></button>
-          </div>
-        </div>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>ClinnovIT - Your Complete IT Solutions</title>
+      <meta name="description"
+         content="ClinnovIT offers comprehensive IT solutions for businesses and individuals. From software development to IT consulting, our expert team delivers high-quality services to meet your technology needs. Explore our range of services and let ClinnovIT be your complete IT solution provider.">
+      <script src="https://kit.fontawesome.com/bc562c5e31.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+      <link href="dist/stackedCards.css" rel="stylesheet" />
+      <link rel="stylesheet" href="circular_slider/css/main.css" />
+      <link rel="stylesheet" href="testimonials/style.css">
+      <style>
+         @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Dancing+Script&family=Jacques+Francois+Shadow&family=Lato:wght@300&family=Open+Sans:wght@300&family=Rambla:ital,wght@0,700;1,400&family=Roboto:wght@300&family=Secular+One&family=Ubuntu&family=Varela+Round&family=Wix+Madefor+Display&display=swap');
+      </style>
+      <link rel="stylesheet" href="./Styles/glightbox.min.css" />
+      <script src="./Styles/glightbox.min.js.download"></script>
+      <link href="./Styles/style.css" rel="stylesheet" />
+      <!-- Sweet Alert -->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <style>
+         #myProgress {
+         width: 100%;
+         background-color: white;
+         position: fixed;
+         height: 5px;
+         z-index: 1;
+         }
+         #myBar {
+         width: 1%;
+         height: 5px;
+         background-color: #0d6efd;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="headerdiv">
+         <header>
+            <img class="header-logo" src="images/logo.png" alt="logo">
+            <nav>
+               <div class="header-menu-toggle" onclick="toggleMenu()">
+                  <div class="header-bar"></div>
+                  <div class="header-bar"></div>
+                  <div class="header-bar"></div>
+               </div>
+               <ul class="header-nav-links" id="navLinks">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#testimonials">Testimonials</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                  <li><a href="#faq">Terms & Condition</a></li>
+                  <li><a href="#real-contact">Privacy Policy</a></li>
+                  <li><a href="#real-contact">Contact</a></li>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">Pricing</a></li>
+               </ul>
+            </nav>
+         </header>
+         <div id="myProgress">
+            <div id="myBar"></div>
+         </div>
       </div>
-    </div>
-    <div class="white-section">
-      <div class="video-section">
-        <div class="video-container">
-          <!-- <video width="560" height="315" autoplay="autoplay" id="coverVideo" loop="loop" muted="muted" playsinline="playsinline"
-            poster="../custom/video_cover_poster.png">
-            <source src="video.mp4" type="assets/intro_insta.mp4" />
-            Your browser does not support the video tag.
-          </video><button aria-label="turn on or off the video sound" class="video-volume-btn" role="button"
-            type="button"><span class="off-screen">the video sound on or off</span><i aria-hidden="true"
-              class="fa fa-volume-off"></i><i aria-hidden="true" class="fa fa-volume-up"></i></button> -->
-          <video style="max-height: 315px;" controls>
-            <source src="assets/intro_insta.mp4" type="video/mp4">
-            <!-- Additional source elements for alternative video formats (optional) -->
-            Your browser does not support the video tag.
-          </video>
-        </div>
+      <div class="page-container">
+         <div class="yellow-section">
+            <div class="text-section">
+               <div class="text-video">
+                  <span class="section-title">CLInnovIT</span>
+               </div>
+               <div class="content">
+                  <div class="content-text">
+                     <p>Merging psychology and technology for your digital success</p>
+                     <p>from <a href="https://www.chakrabortyandlahkarinnovations.com/" style="color: black;">Chakraborty and
+                        Lahkar Innovations Pvt. Ltd.</a>
+                     </p>
+                     <button class="section-button" onclick='window.location.href="#real-contact"'>Get in Touch <i
+                        class="fa-solid fa-circle-arrow-right"></i></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="white-section">
+            <div class="video-section">
+               <div class="video-container">
+                  <!-- <video width="560" height="315" autoplay="autoplay" id="coverVideo" loop="loop" muted="muted" playsinline="playsinline"
+                     poster="../custom/video_cover_poster.png">
+                     <source src="video.mp4" type="assets/intro_insta.mp4" />
+                     Your browser does not support the video tag.
+                     </video><button aria-label="turn on or off the video sound" class="video-volume-btn" role="button"
+                     type="button"><span class="off-screen">the video sound on or off</span><i aria-hidden="true"
+                       class="fa fa-volume-off"></i><i aria-hidden="true" class="fa fa-volume-up"></i></button> -->
+                  <video style="max-height: 315px;" controls>
+                     <source src="assets/intro_insta.mp4" type="video/mp4">
+                     <!-- Additional source elements for alternative video formats (optional) -->
+                     Your browser does not support the video tag.
+                  </video>
+               </div>
+            </div>
+         </div>
       </div>
-    </div>
-  </div>
-
-
-  <div class="animation2">
-    <br>
-    <h1 id="h1line" style="color: white;">WHAT WE HAVE ACHIEVED</h1>
-    <div class="container2" id="sliderContainer">
-      <span class="slidex">
-        <div class="card-item">
-          <span class="tenx">10x</span><br>
-          <p class="in">increase in CTR</p>
-        </div>
-      </span>
-      <span class="slidex">
-        <div class="card-item">
-          <span class="x">2.5x</span>
-          <p class="Conversion">Increase in User Engagement Time</p>
-        </div>
-      </span>
-      <span class="slidex">
-        <div class="card-item">
-          <span class="fifty">50%</span>
-          <p class="Conversion">Increase in Conversion</p>
-        </div>
-      </span>
-    </div>
-  </div>
-
-
-  <div class="slider">
-    <div class="heading">
-      <br>
-      <h1 style="color: white;">HOW WE ACHIEVE</h1>
-    </div>
-    <div class="circular-slider circular-slider-1">
-      <div class="wrapper" style="width: 100%;height: 500px;">
-        <div class="controls">
-          <div class="controls__left">
-            <div class="icon-wrapper"><i class="far fa-arrow-alt-circle-left"></i></div>
-          </div>
-          <div class="controls__right">
-            <div class="icon-wrapper"><i class="far fa-arrow-alt-circle-right"></i></div>
-          </div>
-          <div class="controls__autoplay controls__autoplay_running">
-            <div class="icon-wrapper">
-              <div class="pause"><i class="far fa-pause-circle"></i></div>
-              <div class="run"><i class="far fa-play-circle"></i></div>
-            </div>
-          </div>
-        </div>
-        <div class="slides-holder">
-          <div class="slides-holder__item slides-holder__item_active"><img src="circular_slider/Images/1_img.jpg"
-              alt="img" /></div>
-          <div class="slides-holder__item"><img src="circular_slider/Images/2_img.jpg" alt="img" /></div>
-          <div class="slides-holder__item"><img src="circular_slider/Images/3_img.jpg" alt="img" /></div>
-          <div class="slides-holder__item"><img src="circular_slider/Images/4_img.jpg" alt="img" /></div>
-          <div class="slides-holder__item"><img src="circular_slider/Images/5_img.jpg" alt="img" /></div>
-          <div class="slides-holder__item"><img src="circular_slider/Images/6_img.jpg" alt="img" /></div>
-          <div class="slides-holder__item"><img src="circular_slider/Images/7_img.jpg" alt="img" /></div>
-          <div class="slides-holder__item"><img src="circular_slider/Images/8_img.jpg" alt="img" /></div>
-        </div>
-        <div class="descriptions">
-          <div class="descriptions__item descriptions__item_visible">
-            <h1>Conduct Market Research</h1>
-          </div>
-          <div class="descriptions__item">
-            <h1>Apply Neuroscience Principles</h1>
-          </div>
-          <div class="descriptions__item">
-            <h1>Utilize A/B testing</h1>
-          </div>
-          <div class="descriptions__item">
-            <h1>Personalize Marketing Efforts</h1>
-          </div>
-          <div class="descriptions__item">
-            <h1>Optimize Website Design</h1>
-          </div>
-          <div class="descriptions__item">
-            <h1>Implement Emotional Branding</h1>
-          </div>
-          <div class="descriptions__item">
-            <h1>Optimize Website Design</h1>
-          </div>
-          <div class="descriptions__item">
-            <h1>Personalize Marketing Efforts</h1>
-          </div>
-        </div>
+      <div class="animation2">
+         <br>
+         <h1 id="h1line" style="color: white;">WHAT WE HAVE ACHIEVED</h1>
+         <div class="container2" id="sliderContainer">
+            <span class="slidex">
+               <div class="card-item">
+                  <span class="tenx">10x</span><br>
+                  <p class="in">increase in CTR</p>
+               </div>
+            </span>
+            <span class="slidex">
+               <div class="card-item">
+                  <span class="x">2.5x</span>
+                  <p class="Conversion">Increase in User Engagement Time</p>
+               </div>
+            </span>
+            <span class="slidex">
+               <div class="card-item">
+                  <span class="fifty">50%</span>
+                  <p class="Conversion">Increase in Conversion</p>
+               </div>
+            </span>
+         </div>
       </div>
-    </div>
-  </div>
-  <!-- <div class="marketing">
-        <div class="content">
-            <span class="market-text">So do you think</span>
-            <span class="market-text">we can accelerate your</span>
-            <p class="brand">Brand</p>
-            <div class="btn-text"> 
-                <button class="get-btn"> YES<i class="fa-sharp fa-solid fa-arrow-right"></i></button>
-                <div class="read-more">
-                <p>Read More</p>
-                <i class="fa-sharp fa-solid fa-angle-down" style="color: #ffffff;"></i>
-                </div>
-                
+      <div class="slider">
+         <div class="heading">
+            <br>
+            <h1 style="color: white;">HOW WE ACHIEVE</h1>
+         </div>
+         <div class="circular-slider circular-slider-1">
+            <div class="wrapper" style="width: 100%;height: 500px;">
+               <div class="controls">
+                  <div class="controls__left">
+                     <div class="icon-wrapper"><i class="far fa-arrow-alt-circle-left"></i></div>
+                  </div>
+                  <div class="controls__right">
+                     <div class="icon-wrapper"><i class="far fa-arrow-alt-circle-right"></i></div>
+                  </div>
+                  <div class="controls__autoplay controls__autoplay_running">
+                     <div class="icon-wrapper">
+                        <div class="pause"><i class="far fa-pause-circle"></i></div>
+                        <div class="run"><i class="far fa-play-circle"></i></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="slides-holder">
+                  <div class="slides-holder__item slides-holder__item_active"><img src="circular_slider/Images/1_img.jpg"
+                     alt="img" /></div>
+                  <div class="slides-holder__item"><img src="circular_slider/Images/2_img.jpg" alt="img" /></div>
+                  <div class="slides-holder__item"><img src="circular_slider/Images/3_img.jpg" alt="img" /></div>
+                  <div class="slides-holder__item"><img src="circular_slider/Images/4_img.jpg" alt="img" /></div>
+                  <div class="slides-holder__item"><img src="circular_slider/Images/5_img.jpg" alt="img" /></div>
+                  <div class="slides-holder__item"><img src="circular_slider/Images/6_img.jpg" alt="img" /></div>
+                  <div class="slides-holder__item"><img src="circular_slider/Images/7_img.jpg" alt="img" /></div>
+                  <div class="slides-holder__item"><img src="circular_slider/Images/8_img.jpg" alt="img" /></div>
+               </div>
+               <div class="descriptions">
+                  <div class="descriptions__item descriptions__item_visible">
+                     <h1>Conduct Market Research</h1>
+                  </div>
+                  <div class="descriptions__item">
+                     <h1>Apply Neuroscience Principles</h1>
+                  </div>
+                  <div class="descriptions__item">
+                     <h1>Utilize A/B testing</h1>
+                  </div>
+                  <div class="descriptions__item">
+                     <h1>Personalize Marketing Efforts</h1>
+                  </div>
+                  <div class="descriptions__item">
+                     <h1>Optimize Website Design</h1>
+                  </div>
+                  <div class="descriptions__item">
+                     <h1>Implement Emotional Branding</h1>
+                  </div>
+                  <div class="descriptions__item">
+                     <h1>Optimize Website Design</h1>
+                  </div>
+                  <div class="descriptions__item">
+                     <h1>Personalize Marketing Efforts</h1>
+                  </div>
+               </div>
             </div>
-           
-        </div>
-        <p class="que">?</p>
-
-        <div class="img">
-            <img src="images/marketing.png" alt="market">
-        </div>
-    </div> -->
-
-  <div id="container4">
-    <h2>OUR CLIENTS</h2>
-    <ul>
-      <li> <a href="#"><img src="assets/CCmr.png"></a></li>
-      <li><a href="#"><img src="testimonials/assets/partner-logo-150x150.png.png"></a></li>
-      <li><a><img src="testimonials/assets/client1.png"></a></li>
-    </ul>
-  </div>
-  <!-- <section class="testi-text">Testimonials</section>
-   
-        <div class="testimonials">
-            <div class="card">
-                
-                <blockquote> CLInnovIT provided exceptional website development services for our laboratory. Their professionalism, technical expertise, and attention to detail surpassed our  expectations. 
-                    We highly recommend CLInnovIT for anyone seeking top-notch website development solutions. </blockquote>
-                <img src="images/BMR.png" alt="user" class="user">
-            </div>
-        </div> -->
-
-  <!-- ////////////////////////////////////////////////////////////////////////////////////////////////
-                               START SECTION 5 - THE TESTIMONIALS  
-/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-  <section id="testimonials" class="testimonials">
-    <div class="container">
-      <div class="row text-center text-white">
-        <h1 class="display-3 fw-bold">Testimonials</h1>
-        <hr style="width: 100px; height: 3px" class="mx-auto" />
-        <p class="lead pt-1">what our clients are saying</p>
+         </div>
       </div>
-
-      <!-- START THE CAROUSEL CONTENT    -->
-      <div class="row align-items-center">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <!-- CAROUSEL ITEM 1  -->
-            <div class="carousel-item">
-              <!-- testimonials card   -->
-              <div class="testimonials__card">
-                <p class="lh-lg">
-                  <i class="fas fa-quote-left"></i>
-                  CLInnovIT provided exceptional website development services for our laboratory. Their professionalism,
-                  technical expertise, and attention to detail surpassed our expectations. We highly recommend CLInnovIT
-                  for anyone seeking top-notch website development solutions.
-                  <i class="fas fa-quote-right"></i>
-                </p>
-                <div class="ratings p-1">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <p></p>
-              </div>
-              <!-- client picture   -->
-              <div class="testimonials__picture">
-                <img src="./assets/BMR.jpeg" alt="client-1 picture" class="rounded-circle img-fluid" />
-              </div>
-              <!-- client name & role   -->
-              <div class="testimonials__name">
-                <h3>Balamurugan Ramadass</h3>
-                <p class="fw-light">Microbiome Researcher</p>
-              </div>
-            </div>
-            <!-- CAROUSEL ITEM 2  -->
-            <div class="carousel-item active">
-              <!-- testimonials card   -->
-              <div class="testimonials__card">
-                <p class="lh-lg">
-                  <i class="fas fa-quote-left"></i>
-                  CLInnovIT has truly surpassed our expectations in developing a remarkable website for our cognitive
-                  neuroscience lab. With their exceptional expertise and meticulous attention to detail, they have
-                  crafted a visually captivating and user-friendly platform that showcases our research endeavors and
-                  services. We wholeheartedly endorse CLInnovIT as the go-to choice for any cognitive neuroscience lab
-                  seeking a transformative online presence.
-                  <i class="fas fa-quote-right"></i>
-                </p>
-                <div class="ratings p-1">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <p></p>
-              </div>
-              <!-- client picture   -->
-              <div class="testimonials__picture">
-                <img src="./assets/PM.jpg" alt="client-2 picture" class="rounded-circle img-fluid" />
-              </div>
-              <!-- client name & role   -->
-              <div class="testimonials__name">
-                <h3>Priyadarshini Mishra</h3>
-                <p class="fw-light">Cognitive Neuroscience Researcher</p>
-              </div>
-            </div>
-
-          </div>
-          <!-- <div class="text-center">
-            <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button"
-              data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"></button>
-            <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button"
-              data-bs-target="#carouselExampleCaptions" data-bs-slide="next"></button>
-          </div> -->
-        </div>
+      <!-- <div class="marketing">
+         <div class="content">
+             <span class="market-text">So do you think</span>
+             <span class="market-text">we can accelerate your</span>
+             <p class="brand">Brand</p>
+             <div class="btn-text"> 
+                 <button class="get-btn"> YES<i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                 <div class="read-more">
+                 <p>Read More</p>
+                 <i class="fa-sharp fa-solid fa-angle-down" style="color: #ffffff;"></i>
+                 </div>
+                 
+             </div>
+            
+         </div>
+         <p class="que">?</p>
+         
+         <div class="img">
+             <img src="images/marketing.png" alt="market">
+         </div>
+         </div> -->
+      <div id="container4">
+         <h2>OUR CLIENTS</h2>
+         <ul>
+            <li> <a href="#"><img src="assets/CCmr.png"></a></li>
+            <li><a href="#"><img src="testimonials/assets/partner-logo-150x150.png.png"></a></li>
+            <li><a><img src="testimonials/assets/client1.png"></a></li>
+         </ul>
       </div>
-    </div>
-  </section>
-
-  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////
-                       START SECTION 6 - THE FAQ 
-//////////////////////////////////////////////////////////////////////////////////////////////////////-->
-  <section id="faq" class="faq">
-    <div class="container">
-      <div class="row text-center">
-        <h1 class="display-3 fw-bold text-uppercase">faq</h1>
-        <div class="heading-line"></div>
-        <p class="lead">
-          frequently asked questions, get knowledge before hand
-        </p>
-      </div>
-      <!-- ACCORDION CONTENT   -->
-      <div class="row mt-5">
-        <div class="col-md-12">
-          <div class="accordion" id="accordionExample">
-            <!-- ACCORDION ITEM 1  -->
-            <div class="accordion-item shadow mb-3">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  Why do i need a website?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p>Not having a website means missing out on significant advantages:<br>
-                    <br>
-                    1. Online Visibility: Without a website, you are invisible to the vast online audience actively
-                    searching for products, services, and information.<br><br>
-                    2. Credibility and Trust: A website establishes legitimacy, professionalism, and trustworthiness,
-                    vital factors in gaining customer confidence.<br><br>
-                    3. Customer Engagement: A website provides a platform to engage with potential customers, answer
-                    inquiries, and showcase your offerings effectively.<br><br>
-                    4. Competitive Edge: In today's digital landscape, competitors with websites have a distinct
-                    advantage over those without, capturing online market share.<br><br>
-                    5. Business Growth: A website enables expansion into new markets, drives sales, and acts as a
-                    powerful marketing tool, contributing to long-term business growth.
-                  </p>
-                </div>
-              </div>
+      <!-- <section class="testi-text">Testimonials</section>
+         <div class="testimonials">
+             <div class="card">
+                 
+                 <blockquote> CLInnovIT provided exceptional website development services for our laboratory. Their professionalism, technical expertise, and attention to detail surpassed our  expectations. 
+                     We highly recommend CLInnovIT for anyone seeking top-notch website development solutions. </blockquote>
+                 <img src="images/BMR.png" alt="user" class="user">
+             </div>
+         </div> -->
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////////////
+         START SECTION 5 - THE TESTIMONIALS  
+         /////////////////////////////////////////////////////////////////////////////////////////////////////-->
+      <section id="testimonials" class="testimonials">
+         <div class="container">
+            <div class="row text-center text-white">
+               <h1 class="display-3 fw-bold">Testimonials</h1>
+               <hr style="width: 100px; height: 3px" class="mx-auto" />
+               <p class="lead pt-1">what our clients are saying</p>
             </div>
-            <!-- ACCORDION ITEM 2  -->
-            <div class="accordion-item shadow mb-3">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  What sort of businesses do we cater to?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  At CLInnovIT, we have the privilege of working with a diverse range of businesses, from micro to macro
-                  enterprises. We specialize in crafting customized website development solutions that cater to the
-                  unique needs and goals of each business. Whether it's a small startup, a local business, a
-                  medium-sized company, or a large corporation, we excel at creating engaging, functional, and scalable
-                  websites that elevate their online presence. Our versatility and commitment to excellence make us the
-                  go-to choice for businesses of all scales seeking top-notch website development services.
-                </div>
-              </div>
+            <!-- START THE CAROUSEL CONTENT    -->
+            <div class="row align-items-center">
+               <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                     <!-- CAROUSEL ITEM 1  -->
+                     <div class="carousel-item">
+                        <!-- testimonials card   -->
+                        <div class="testimonials__card">
+                           <p class="lh-lg">
+                              <i class="fas fa-quote-left"></i>
+                              CLInnovIT provided exceptional website development services for our laboratory. Their professionalism,
+                              technical expertise, and attention to detail surpassed our expectations. We highly recommend CLInnovIT
+                              for anyone seeking top-notch website development solutions.
+                              <i class="fas fa-quote-right"></i>
+                           </p>
+                           <div class="ratings p-1">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                           </div>
+                           <p></p>
+                        </div>
+                        <!-- client picture   -->
+                        <div class="testimonials__picture">
+                           <img src="./assets/BMR.jpeg" alt="client-1 picture" class="rounded-circle img-fluid" />
+                        </div>
+                        <!-- client name & role   -->
+                        <div class="testimonials__name">
+                           <h3>Balamurugan Ramadass</h3>
+                           <p class="fw-light">Microbiome Researcher</p>
+                        </div>
+                     </div>
+                     <!-- CAROUSEL ITEM 2  -->
+                     <div class="carousel-item active">
+                        <!-- testimonials card   -->
+                        <div class="testimonials__card">
+                           <p class="lh-lg">
+                              <i class="fas fa-quote-left"></i>
+                              CLInnovIT has truly surpassed our expectations in developing a remarkable website for our cognitive
+                              neuroscience lab. With their exceptional expertise and meticulous attention to detail, they have
+                              crafted a visually captivating and user-friendly platform that showcases our research endeavors and
+                              services. We wholeheartedly endorse CLInnovIT as the go-to choice for any cognitive neuroscience lab
+                              seeking a transformative online presence.
+                              <i class="fas fa-quote-right"></i>
+                           </p>
+                           <div class="ratings p-1">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                           </div>
+                           <p></p>
+                        </div>
+                        <!-- client picture   -->
+                        <div class="testimonials__picture">
+                           <img src="./assets/PM.jpg" alt="client-2 picture" class="rounded-circle img-fluid" />
+                        </div>
+                        <!-- client name & role   -->
+                        <div class="testimonials__name">
+                           <h3>Priyadarshini Mishra</h3>
+                           <p class="fw-light">Cognitive Neuroscience Researcher</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- <div class="text-center">
+                     <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button"
+                       data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"></button>
+                     <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button"
+                       data-bs-target="#carouselExampleCaptions" data-bs-slide="next"></button>
+                     </div> -->
+               </div>
             </div>
-            <!-- ACCORDION ITEM 3  -->
-            <div class="accordion-item shadow mb-3">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  What is our pricing model?
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  CLInnovIT offers a flexible pricing model to accommodate the needs and budgets of our clients. For
-                  simple static websites, our prices start from Rs. 4000, providing a cost-effective solution for
-                  businesses looking for a basic online presence. For more complex and responsive websites, our prices
-                  start from Rs. 10000 and may vary based on the specific requirements and functionalities desired.
-                  <br><br>
-                  Additionally, we provide website maintenance services on a subscription basis, starting from Rs. 1000
-                  per month. These services ensure that your website remains up-to-date, secure, and optimized for
-                  optimal performance. The pricing for maintenance services may vary depending on the size and
-                  complexity of the website, as well as the frequency of updates required.
-                  <br><br>
-                  At CLInnovIT, we understand that each business has unique requirements and budgetary constraints. As
-                  such, we are open to negotiations to find a pricing solution that works best for you. Our aim is to
-                  deliver exceptional value while ensuring affordability and client satisfaction.
-                </div>
-              </div>
+         </div>
+      </section>
+      <!-- /////////////////////////////////////////////////////////////////////////////////////////////////
+         START SECTION 6 - THE FAQ 
+         //////////////////////////////////////////////////////////////////////////////////////////////////////-->
+      <section id="faq" class="faq">
+         <div class="container">
+            <div class="row text-center">
+               <h1 class="display-3 fw-bold text-uppercase">faq</h1>
+               <div class="heading-line"></div>
+               <p class="lead">
+                  frequently asked questions, get knowledge before hand
+               </p>
             </div>
-            <!-- ACCORDION ITEM 4  -->
-            <div class="accordion-item shadow mb-3">
-              <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  When do you need to pay?
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  As per our standard clause, for any project undertaken by CLInnovIT, we require a 50% advance payment
-                  before commencing the work. This advance payment serves as a commitment to initiate the project and
-                  cover the initial costs associated with the development process. The remaining balance is due upon the
-                  completion of the project and before the final delivery of the website. We believe this payment
-                  structure ensures a fair and transparent process for both parties involved, enabling us to provide you
-                  with the best possible service and results.
-                </div>
-              </div>
+            <!-- ACCORDION CONTENT   -->
+            <div class="row mt-5">
+               <div class="col-md-12">
+                  <div class="accordion" id="accordionExample">
+                     <!-- ACCORDION ITEM 1  -->
+                     <div class="accordion-item shadow mb-3">
+                        <h2 class="accordion-header" id="headingOne">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                              aria-expanded="true" aria-controls="collapseOne">
+                           Why do i need a website?
+                           </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                           data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              <p>Not having a website means missing out on significant advantages:<br>
+                                 <br>
+                                 1. Online Visibility: Without a website, you are invisible to the vast online audience actively
+                                 searching for products, services, and information.<br><br>
+                                 2. Credibility and Trust: A website establishes legitimacy, professionalism, and trustworthiness,
+                                 vital factors in gaining customer confidence.<br><br>
+                                 3. Customer Engagement: A website provides a platform to engage with potential customers, answer
+                                 inquiries, and showcase your offerings effectively.<br><br>
+                                 4. Competitive Edge: In today's digital landscape, competitors with websites have a distinct
+                                 advantage over those without, capturing online market share.<br><br>
+                                 5. Business Growth: A website enables expansion into new markets, drives sales, and acts as a
+                                 powerful marketing tool, contributing to long-term business growth.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- ACCORDION ITEM 2  -->
+                     <div class="accordion-item shadow mb-3">
+                        <h2 class="accordion-header" id="headingTwo">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           What sort of businesses do we cater to?
+                           </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                           data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              At CLInnovIT, we have the privilege of working with a diverse range of businesses, from micro to macro
+                              enterprises. We specialize in crafting customized website development solutions that cater to the
+                              unique needs and goals of each business. Whether it's a small startup, a local business, a
+                              medium-sized company, or a large corporation, we excel at creating engaging, functional, and scalable
+                              websites that elevate their online presence. Our versatility and commitment to excellence make us the
+                              go-to choice for businesses of all scales seeking top-notch website development services.
+                           </div>
+                        </div>
+                     </div>
+                     <!-- ACCORDION ITEM 3  -->
+                     <div class="accordion-item shadow mb-3">
+                        <h2 class="accordion-header" id="headingThree">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           What is our pricing model?
+                           </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                           data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              CLInnovIT offers a flexible pricing model to accommodate the needs and budgets of our clients. For
+                              simple static websites, our prices start from Rs. 4000, providing a cost-effective solution for
+                              businesses looking for a basic online presence. For more complex and responsive websites, our prices
+                              start from Rs. 10000 and may vary based on the specific requirements and functionalities desired.
+                              <br><br>
+                              Additionally, we provide website maintenance services on a subscription basis, starting from Rs. 1000
+                              per month. These services ensure that your website remains up-to-date, secure, and optimized for
+                              optimal performance. The pricing for maintenance services may vary depending on the size and
+                              complexity of the website, as well as the frequency of updates required.
+                              <br><br>
+                              At CLInnovIT, we understand that each business has unique requirements and budgetary constraints. As
+                              such, we are open to negotiations to find a pricing solution that works best for you. Our aim is to
+                              deliver exceptional value while ensuring affordability and client satisfaction.
+                           </div>
+                        </div>
+                     </div>
+                     <!-- ACCORDION ITEM 4  -->
+                     <div class="accordion-item shadow mb-3">
+                        <h2 class="accordion-header" id="headingFour">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                           When do you need to pay?
+                           </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                           data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              As per our standard clause, for any project undertaken by CLInnovIT, we require a 50% advance payment
+                              before commencing the work. This advance payment serves as a commitment to initiate the project and
+                              cover the initial costs associated with the development process. The remaining balance is due upon the
+                              completion of the project and before the final delivery of the website. We believe this payment
+                              structure ensures a fair and transparent process for both parties involved, enabling us to provide you
+                              with the best possible service and results.
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
-            START SECTION 8 - GET STARTED  
-/////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-  <section id="contact" class="get-started">
-    <div class="container">
-      <div class="row text-center">
-        <h1 class="display-3 fw-bold text-capitalize" style=" color:#0d6efd;">Get started</h1>
-        <div class="heading-line"></div>
-        <!-- <p class="lh-lg">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-        illum architecto modi.
-      </p> -->
-      </div>
-
-      <!-- START THE CTA CONTENT  -->
-      <div class="row text-white">
-        <div class="col-12 col-lg-6 gradient shadow p-3" style="background-color: orange;">
-          <div class="cta-info w-100">
-            <h4 class="display-4 fw-bold">100% Satisfaction Guaranteed</h4>
-            <p class="lh-lg">
-              Ready to take your online presence to the next level? With our experienced team of developers and
-              designers by your side, you can rest assured that your online success is just a few clicks away. So why
-              wait? Join us today and take your business to new heights with our expertise!
-            </p>
-            <h3 class="display-3--brief">What will be the next step?</h3>
-            <ul class="cta-info__list">
-              <li>We'll prepare the proposal.</li>
-              <li>we'll discuss it together.</li>
-              <li>let's start the discussion.</li>
+         </div>
+      </section>
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////////////
+         START SECTION 7 - THE TERMS & CONDITION  
+         /////////////////////////////////////////////////////////////////////////////////////////////////////-->
+      <section id="termsAndConditions" class="terms-and-conditions">
+         <div class="tnc-container">
+         <div class="row text-center">
+            <h1 class="display-3 fw-bold text-capitalize" style=" color:#0d6efd;">Terms and Conditions</h1>
+            <div class="heading-line"></div>
+            <!-- <p class="lh-lg">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
+               illum architecto modi.
+               </p> -->
+         </div>
+         <p>
+         <p>Welcome to CLInnovIT!</p>
+         <p>These terms and conditions outline the rules and regulations for the use of CLInnovIT's Website, located at https://www.clinnovit.com.</p>
+         <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use CLInnovIT if you do not agree to take all of the terms and conditions stated on this page.</p>
+         <span id="dots"></span>
+         <div id="more">
+            <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company's terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of in. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
+            <h3><strong>Cookies</strong></h3>
+            <p>We employ the use of cookies. By accessing CLInnovIT, you agreed to use cookies in agreement with the CLInnovIT's Privacy Policy. </p>
+            <p>Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
+            <h3><strong>License</strong></h3>
+            <p>Unless otherwise stated, CLInnovIT and/or its licensors own the intellectual property rights for all material on CLInnovIT. All intellectual property rights are reserved. You may access this from CLInnovIT for your own personal use subjected to restrictions set in these terms and conditions.</p>
+            <p>You must not:</p>
+            <ul>
+               <li>Republish material from CLInnovIT</li>
+               <li>Sell, rent or sub-license material from CLInnovIT</li>
+               <li>Reproduce, duplicate or copy material from CLInnovIT</li>
+               <li>Redistribute content from CLInnovIT</li>
             </ul>
-          </div>
-        </div>
-        <div id="real-contact" class="col-12 col-lg-6 bg-white shadow p-3">
-          <div class="form w-100 pb-2">
-            <h4 class="display-3--title mb-5">start your project</h4>
-
-            <form class="row" onsubmit="reset(); return false">
-              <div class="col-lg-6 col-md mb-3">
-                <input type="text" placeholder="First Name" id="inputFirstName"
-                  class="shadow form-control form-control-lg" required />
-              </div>
-              <div class="col-lg-6 col-md mb-3">
-                <input type="text" placeholder="Last Name" id="inputLastName"
-                  class="shadow form-control form-control-lg" required />
-              </div>
-              <div class="col-lg-12 mb-3">
-                <input type="email" placeholder="email address" id="inputEmail"
-                  class="shadow form-control form-control-lg" required />
-              </div>
-              <div class="col-lg-12 mb-3">
-                <textarea name="message" placeholder="message" id="message" rows="8" required
-                  class="shadow form-control form-control-lg"></textarea>
-              </div>
-              <div class="text-center d-grid mt-1">
-                <button type="submit" class="btn btn-primary rounded-pill pt-3 pb-3" id="btn-contact">
-                  submit
-                  <i class="fas fa-paper-plane"></i>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ///////////////////////////////////////////////////////////////////////////////////////////
-                         START SECTION 9 - THE FOOTER  
-///////////////////////////////////////////////////////////////////////////////////////////////-->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <!-- CONTENT FOR THE MOBILE NUMBER  -->
-        <!-- <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
-        <div class="contact-box__icon">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24"
-            stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path
-              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
-            </path>
-            <path d="M15 7a2 2 0 0 1 2 2"></path>
-            <path d="M15 3a6 6 0 0 1 6 6"></path>
-          </svg>
-        </div>
-        <div class="contact-box__info">
-          <a href="#" class="contact-box__info--title">+1 728365413</a>
-          <p class="contact-box__info--subtitle">Mon-Fri 9am-6pm</p>
-        </div>
-      </div> -->
-
-
-        <!-- CONTENT FOR EMAIL  -->
-        <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
-          <div class="contact-box__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24"
-              stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <polyline points="3 9 12 15 21 9 12 3 3 9"></polyline>
-              <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10"></path>
-              <line x1="3" y1="19" x2="9" y2="13"></line>
-              <line x1="15" y1="13" x2="21" y2="19"></line>
-            </svg>
-          </div>
-          <div class="contact-box__info">
-            <a href="mailto:official@clinnovit.com" class="contact-box__info--title">official@clinnovit.com</a>
-            <p class="contact-box__info--subtitle">Online support</p>
-          </div>
-        </div>
-        <!-- CONTENT FOR LOCATION  -->
-        <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
-          <div class="contact-box__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24"
-              stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <line x1="18" y1="6" x2="18" y2="6.01"></line>
-              <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5"></path>
-              <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15"></polyline>
-              <line x1="9" y1="4" x2="9" y2="17"></line>
-              <line x1="15" y1="15" x2="15" y2="20"></line>
-            </svg>
-          </div>
-          <div class="contact-box__info">
-            <a href="https://goo.gl/maps/M4Q9wkPb5hxK3W5t6" class="contact-box__info--title">Bhubaneswar, India</a>
-            <!-- <p class="contact-box__info--subtitle">NY 10012, US</p> -->
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- START THE SOCIAL MEDIA CONTENT  -->
-    <div class="footer-sm" style="background-color: #212121">
-      <div class="container">
-        <div class="row py-4 text-center text-white">
-          <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
-            connect with us on social media
-          </div>
-          <div class="col-lg-7 col-md-6">
-            <!-- <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a> -->
-            <!-- <a href=""><i class="fab fa-linkedin"></i></a> -->
-            <a href="https://www.instagram.com/clinnov_it/"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- START THE CONTENT FOR THE CAMPANY INFO -->
-    <!-- <div class="container mt-5">
-    <div class="row text-white justify-content-center mt-3 pb-3">
-      <div class="col-12 col-sm-6 col-lg-6 mx-auto">
-        <h5 class="text-capitalize fw-bold">Campany name</h5>
-        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px" />
-        <p class="lh-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-          ex obcaecati blanditiis reprehenderit ab mollitia voluptatem
-          consectetur?
-        </p>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-        <h5 class="text-capitalize fw-bold">Products</h5>
-        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px" />
-        <ul class="list-inline campany-list">
-          <li>
-            <a href="#">Lorem ipsum</a>
-          </li>
-          <li>
-            <a href="#">Lorem ipsum</a>
-          </li>
-          <li>
-            <a href="#">Lorem ipsum</a>
-          </li>
-          <li>
-            <a href="#">Lorem ipsum</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-        <h5 class="text-capitalize fw-bold">useful links</h5>
-        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px" />
-        <ul class="list-inline campany-list">
-          <li>
-            <a href="#">
-              Your Account</a>
-          </li>
-          <li>
-            <a href="#">Become an Affiliate</a>
-          </li>
-          <li>
-            <a href="#">create an account</a>
-          </li>
-          <li><a href="#">Help</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-        <h5 class="text-capitalize fw-bold">contact</h5>
-        <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px" />
-        <ul class="list-inline campany-list">
-          <li>
-            <a href="#">Lorem ipsum</a>
-          </li>
-          <li>
-            <a href="#">Lorem ipsum</a>
-          </li>
-          <li>
-            <a href="#">Lorem ipsum</a>
-          </li>
-          <li>
-            <a href="#">Lorem ipsum</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div> -->
-
-    <!-- START THE COPYRIGHT INFO  -->
-    <div class="footer-bottom pt-5 pb-5">
-      <div class="container">
-        <div class="row text-center text-white">
-          <div class="col-12">
-            <div class="footer-bottom__copyright">
-              © Copyright 2023
-              <a href="#">CLInnovIT</a>
+            <p>This Agreement shall begin on the date hereof. Our Terms and Conditions were created with the help of the <a href="https://www.termsandconditionsgenerator.com/">Free Terms and Conditions Generator</a>.</p>
+            <p>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. CLInnovIT does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of CLInnovIT,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, CLInnovIT shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.</p>
+            <p>CLInnovIT reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.</p>
+            <p>You warrant and represent that:</p>
+            <ul>
+               <li>You are entitled to post the Comments on our website and have all necessary licenses and consents to do so;</li>
+               <li>The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party;</li>
+               <li>The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy</li>
+               <li>The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.</li>
+            </ul>
+            <p>You hereby grant CLInnovIT a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.</p>
+            <h3><strong>Hyperlinking to our Content</strong></h3>
+            <p>The following organizations may link to our Website without prior written approval:</p>
+            <ul>
+               <li>Government agencies;</li>
+               <li>Search engines;</li>
+               <li>News organizations;</li>
+               <li>Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and</li>
+               <li>System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.</li>
+            </ul>
+            <p>These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party's site.</p>
+            <p>We may consider and approve other link requests from the following types of organizations:</p>
+            <ul>
+               <li>commonly-known consumer and/or business information sources;</li>
+               <li>dot.com community sites;</li>
+               <li>associations or other groups representing charities;</li>
+               <li>online directory distributors;</li>
+               <li>internet portals;</li>
+               <li>accounting, law and consulting firms; and</li>
+               <li>educational institutions and trade associations.</li>
+            </ul>
+            <p>We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of CLInnovIT; and (d) the link is in the context of general resource information.</p>
+            <p>These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party's site.</p>
+            <p>If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to CLInnovIT. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.</p>
+            <p>Approved organizations may hyperlink to our Website as follows:</p>
+            <ul>
+               <li>By use of our corporate name; or</li>
+               <li>By use of the uniform resource locator being linked to; or</li>
+               <li>By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party's site.</li>
+            </ul>
+            <p>No use of CLInnovIT's logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
+            <h3><strong>iFrames</strong></h3>
+            <p>Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.</p>
+            <h3><strong>Content Liability</strong></h3>
+            <p>We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.</p>
+            <h3><strong>Reservation of Rights</strong></h3>
+            <p>We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it's linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.</p>
+            <h3><strong>Removal of links from our website</strong></h3>
+            <p>If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.</p>
+            <p>We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.</p>
+            <h3><strong>Disclaimer</strong></h3>
+            <p>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:</p>
+            <ul>
+               <li>limit or exclude our or your liability for death or personal injury;</li>
+               <li>limit or exclude our or your liability for fraud or fraudulent misrepresentation;</li>
+               <li>limit any of our or your liabilities in any way that is not permitted under applicable law; or</li>
+               <li>exclude any of our or your liabilities that may not be excluded under applicable law.</li>
+            </ul>
+            <p>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.</p>
+            <p>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
+         </div>
+         </p>
+         <div class="flx">
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+         </div>
+      </section>
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////////////
+         START SECTION 10 - THE PRIVACY POLICY  
+         /////////////////////////////////////////////////////////////////////////////////////////////////////-->
+      <section id="termsAndConditions" class="terms-and-conditions">
+         <div class="tnc-container">
+            <div class="row text-center">
+               <h1 class="display-3 fw-bold text-capitalize" style=" color:#0d6efd;">Privacy Policy</h1>
+               <div class="heading-line"></div>
+               <!-- <p class="lh-lg">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
+                  illum architecto modi.
+                  </p> -->
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- BACK TO TOP BUTTON  -->
-  <a href="#" class="shadow btn-primary rounded-circle back-to-top">
-    <i class="fas fa-chevron-up"></i>
-  </a>
-
-
-  <script src="Styles/glightbox.min.js.download"></script>
-
-  <!-- <script type="text/javascript">
-    const lightbox = GLightbox({
-      'touchNavigation': true,
-      //      'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
-      'type': 'video',
-      'source': 'youtube', //vimeo, youtube or local
-      'width': 900,
-      'autoPlayVideos': 'true',
-    });
-    
-  </script> -->
-  <script src="./Styles/bootstrap.bundle.min.js.download"></script>
-  <script src="https://kit.fontawesome.com/00775a0389.js" crossorigin="anonymous"></script>
-
-
-
-
-  <script src="circular_slider/js/circular-slider.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <style>
-    .circular-slider {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      align-items: flex-end;
-      background-color: #122266;
-      background-image: url(/Images/blur_back.png);
-    }
-
-    .circular-slider .wrapper {
-      background-color: #FFF;
-    }
-
-    .circular-slider .wrapper .controls__left,
-    .circular-slider .wrapper .controls__right,
-    .circular-slider .wrapper .controls__autoplay {
-      position: absolute;
-      z-index: 101;
-      -webkit-transition: .6s all;
-      -o-transition: .6s all;
-      transition: .6s all;
-    }
-
-    .circular-slider .wrapper .controls__left:hover .icon-wrapper,
-    .circular-slider .wrapper .controls__right:hover .icon-wrapper,
-    .circular-slider .wrapper .controls__autoplay:hover .icon-wrapper {
-      font-size: 1.7em;
-      opacity: 1;
-    }
-
-    .circular-slider .wrapper .controls__left .icon-wrapper,
-    .circular-slider .wrapper .controls__right .icon-wrapper,
-    .circular-slider .wrapper .controls__autoplay .icon-wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      color: #8EB8E5;
-      font-size: 1.5em;
-      opacity: .7;
-    }
-
-    .circular-slider .wrapper .controls__left,
-    .circular-slider .wrapper .controls__right {
-      top: 50%;
-    }
-
-    .circular-slider .wrapper .controls__left {
-      left: 0;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
-
-    .circular-slider .wrapper .controls__left:hover {
-      left: 0;
-    }
-
-    .circular-slider .wrapper .controls__right {
-      right: 0;
-      -webkit-transform: translate(0%, -50%);
-      -ms-transform: translate(0%, -50%);
-      transform: translate(0%, -50%);
-    }
-
-    .circular-slider .wrapper .controls__autoplay {
-      bottom: 0;
-      left: 50%;
-      -webkit-transform: translate(-50%, 0%);
-      -ms-transform: translate(-50%, 0%);
-      transform: translate(-50%, 0%);
-    }
-
-    .circular-slider .wrapper .controls__autoplay_running .pause {
-      display: block;
-    }
-
-    .circular-slider .wrapper .controls__autoplay_running .run {
-      display: none;
-    }
-
-    .circular-slider .wrapper .controls__autoplay_paused .pause {
-      display: none;
-    }
-
-    .circular-slider .wrapper .controls__autoplay_paused .run {
-      display: block;
-    }
-
-    .circular-slider .wrapper .slides-holder {
-      border-radius: 50%;
-      border: 2px dotted black;
-      -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-      transform-origin: center;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      position: relative;
-      z-index: 100;
-    }
-
-    .circular-slider .wrapper .slides-holder__item {
-      position: absolute;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-      transform-origin: center;
-      -webkit-transition: .3s linear all;
-      -o-transition: .3s linear all;
-      transition: .3s linear all;
-      -webkit-filter: brightness(100%);
-      filter: brightness(100%);
-    }
-
-    .circular-slider .wrapper .slides-holder__item img {
-      width: 100%;
-      height: 100%;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    .circular-slider .wrapper .slides-holder__item_active {
-      -webkit-filter: brightness(100%);
-      filter: brightness(100%);
-    }
-
-    .circular-slider .wrapper .descriptions {
-      position: absolute;
-      bottom: 0%;
-      z-index: 0;
-    }
-
-    .circular-slider .wrapper .descriptions__item {
-      width: 100%;
-      height: 0%;
-      opacity: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-transition: opacity 0s 0s linear;
-      -o-transition: opacity 0s 0s linear;
-      transition: opacity 0s 0s linear;
-    }
-
-    .circular-slider .wrapper .descriptions__item_visible {
-      height: 100%;
-      opacity: 1;
-      -webkit-transition: opacity .6s 0s linear;
-      -o-transition: opacity .6s 0s linear;
-      transition: opacity .6s 0s linear;
-    }
-
-    .circular-slider .wrapper .descriptions__item h1,
-    .circular-slider .wrapper .descriptions__item .description {
-      font-family: Helvetica, sans-serif;
-      color: black;
-      text-align: center;
-      font-size: 50px;
-    }
-
-    .circular-slider .wrapper .descriptions__item h1 {
-      font-size: 30px;
-      padding-top: 5px;
-    }
-
-    .circular-slider .wrapper .descriptions__item .description {
-      font-size: 20px;
-      margin-top: 5px;
-      padding: 0% 10%;
-      -o-text-overflow: ellipsis;
-      text-overflow: ellipsis;
-      overflow-y: hidden;
-    }
-
-    .heading {
-      width: 100%;
-    }
-
-    .slider {
-      width: 100%;
-      padding: 0;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    #container4 h2 {
-      font-size: 32px;
-    }
-
-    @media (max-width: 576px) {
-      .slider {
-        /* width: 33%; */
-        padding: 0;
-      }
-
-      .circular-slider .wrapper .descriptions__item h1 {
-        font-size: 20px;
-        padding-top: 45px;
-      }
-
-      .heading {
-        width: 100%;
-      }
-
-      #container4 ul {
-        list-style: none;
-        display: block;
-        flex-wrap: wrap;
-        text-align: center;
-
-      }
-
-      #container4 {
-        padding: 3rem;
-      }
-
-      #container4 h2 {
-        font-size: 24px;
-      }
-    }
-  </style>
-  <script src="js/HorizonStackedSlides.js"></script>
-  <script src="index.js"></script>
-  <!-- <script src="index2.js"></script> -->
-  <script>
-    var sn = new Slider(document.querySelector('.circular-slider-1'), 100, 15, 600, 2500);
-
-    // Slider.prototype.setSize(8000)
-  </script>
-  <script src="./Styles/bootstrap.bundle.min.js.download"></script>
-  <script src="https://kit.fontawesome.com/00775a0389.js" crossorigin="anonymous"></script>
-  <script>
-    /* call function on window scroll */
-    window.onscroll = function () {
-
-      /* height scrolled from top */
-      var scrolled_top = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-
-      /* total scrollable height */
-      var to_scroll = (document.documentElement.scrollHeight || document.body.scrollHeight) - (document.documentElement.clientHeight || document.body.clientHeight || window.innerHeight)
-
-      /* percentage of height scrolled */
-      var horizontal_width = (scrolled_top / to_scroll) * 100;
-
-      /* assigning calculated width to progress bar */
-      document.getElementById('myBar').style.width = horizontal_width + '%';
-    }
-  </script>
-
-</body>
-
+            <p>
+               <!-- <h1>Privacy Policy for CLInnovIT</h1> -->
+            <p>At CLInnovIT, accessible from https://www.clinnovit.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by CLInnovIT and how we use it.</p>
+            <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
+            </p><span id="pdots"></span>
+            <div id="pmore">
+               <p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in CLInnovIT. This policy is not applicable to any information collected offline or via channels other than this website.</p>
+               <h2>Consent</h2>
+               <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+               <h2>Information we collect</h2>
+               <p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
+               <p>If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
+               <p>When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
+               <h2>How we use your information</h2>
+               <p>We use the information we collect in various ways, including to:</p>
+               <ul>
+                  <li>Provide, operate, and maintain our website</li>
+                  <li>Improve, personalize, and expand our website</li>
+                  <li>Understand and analyze how you use our website</li>
+                  <li>Develop new products, services, features, and functionality</li>
+                  <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
+                  <li>Send you emails</li>
+                  <li>Find and prevent fraud</li>
+               </ul>
+               <h2>Log Files</h2>
+               <p>CLInnovIT follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+               <h2>Cookies and Web Beacons</h2>
+               <p>Like any other website, CLInnovIT uses "cookies". These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
+               <h2>Google DoubleClick DART Cookie</h2>
+               <p>Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL – <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
+               <h2>Advertising Partners Privacy Policies</h2>
+               <P>You may consult this list to find the Privacy Policy for each of the advertising partners of CLInnovIT.</p>
+               <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on CLInnovIT, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+               <p>Note that CLInnovIT has no access to or control over these cookies that are used by third-party advertisers.</p>
+               <h2>Third Party Privacy Policies</h2>
+               <p>CLInnovIT's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
+               <p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
+               <h2>CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
+               <p>Under the CCPA, among other rights, California consumers have the right to:</p>
+               <p>Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</p>
+               <p>Request that a business delete any personal data about the consumer that a business has collected.</p>
+               <p>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</p>
+               <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+               <h2>GDPR Data Protection Rights</h2>
+               <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
+               <p>The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</p>
+               <p>The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>
+               <p>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</p>
+               <p>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
+               <p>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</p>
+               <p>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
+               <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+               <h2>Children's Information</h2>
+               <p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+               <p>CLInnovIT does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+               <h2>Changes to This Privacy Policy</h2>
+               <p>We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.</p>
+               <h2>Contact Us</h2>
+               <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</p>
+               </p>
+            </div>
+            </p>
+            <div class="flx"><button onclick="myPolicy()" id="myPolicyBtn">Read more</button></div>
+         </div>
+      </section>
+      <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
+         START SECTION 8 - GET STARTED  
+         /////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+      <section id="contact" class="get-started">
+         <div class="container">
+            <div class="row text-center">
+               <h1 class="display-3 fw-bold text-capitalize" style=" color:#0d6efd;">Get started</h1>
+               <div class="heading-line"></div>
+               <!-- <p class="lh-lg">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
+                  illum architecto modi.
+                  </p> -->
+            </div>
+            <!-- START THE CTA CONTENT  -->
+            <div class="row text-white">
+               <div class="col-12 col-lg-6 gradient shadow p-3" style="background-color: orange;">
+                  <div class="cta-info w-100">
+                     <h4 class="display-4 fw-bold">100% Satisfaction Guaranteed</h4>
+                     <p class="lh-lg">
+                        Ready to take your online presence to the next level? With our experienced team of developers and
+                        designers by your side, you can rest assured that your online success is just a few clicks away. So why
+                        wait? Join us today and take your business to new heights with our expertise!
+                     </p>
+                     <h3 class="display-3--brief">What will be the next step?</h3>
+                     <ul class="cta-info__list">
+                        <li>We'll prepare the proposal.</li>
+                        <li>we'll discuss it together.</li>
+                        <li>let's start the discussion.</li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="real-contact" class="col-12 col-lg-6 bg-white shadow p-3">
+                  <div class="form w-100 pb-2">
+                     <h4 class="display-3--title mb-5">start your project</h4>
+                     <form class="row" onsubmit="reset(); return false">
+                        <div class="col-lg-6 col-md mb-3">
+                           <input type="text" placeholder="First Name" id="inputFirstName"
+                              class="shadow form-control form-control-lg" required />
+                        </div>
+                        <div class="col-lg-6 col-md mb-3">
+                           <input type="text" placeholder="Last Name" id="inputLastName"
+                              class="shadow form-control form-control-lg" required />
+                        </div>
+                        <div class="col-lg-12 mb-3">
+                           <input type="email" placeholder="email address" id="inputEmail"
+                              class="shadow form-control form-control-lg" required />
+                        </div>
+                        <div class="col-lg-12 mb-3">
+                           <textarea name="message" placeholder="message" id="message" rows="8" required
+                              class="shadow form-control form-control-lg"></textarea>
+                        </div>
+                        <div class="text-center d-grid mt-1">
+                           <button type="submit" class="btn btn-primary rounded-pill pt-3 pb-3" id="btn-contact">
+                           submit
+                           <i class="fas fa-paper-plane"></i>
+                           </button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ///////////////////////////////////////////////////////////////////////////////////////////
+         START SECTION 9 - THE FOOTER  
+         ///////////////////////////////////////////////////////////////////////////////////////////////-->
+      <footer class="footer">
+         <div class="container">
+            <div class="row">
+               <!-- CONTENT FOR THE MOBILE NUMBER  -->
+               <!-- <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+                  <div class="contact-box__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" viewBox="0 0 24 24"
+                      stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                        d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                      </path>
+                      <path d="M15 7a2 2 0 0 1 2 2"></path>
+                      <path d="M15 3a6 6 0 0 1 6 6"></path>
+                    </svg>
+                  </div>
+                  <div class="contact-box__info">
+                    <a href="#" class="contact-box__info--title">+1 728365413</a>
+                    <p class="contact-box__info--subtitle">Mon-Fri 9am-6pm</p>
+                  </div>
+                  </div> -->
+               <!-- CONTENT FOR EMAIL  -->
+               <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+                  <div class="contact-box__icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-opened" viewBox="0 0 24 24"
+                        stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <polyline points="3 9 12 15 21 9 12 3 3 9"></polyline>
+                        <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10"></path>
+                        <line x1="3" y1="19" x2="9" y2="13"></line>
+                        <line x1="15" y1="13" x2="21" y2="19"></line>
+                     </svg>
+                  </div>
+                  <div class="contact-box__info">
+                     <a href="mailto:official@clinnovit.com" class="contact-box__info--title">official@clinnovit.com</a>
+                     <p class="contact-box__info--subtitle">Online support</p>
+                  </div>
+               </div>
+               <!-- CONTENT FOR LOCATION  -->
+               <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+                  <div class="contact-box__icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24"
+                        stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <line x1="18" y1="6" x2="18" y2="6.01"></line>
+                        <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5"></path>
+                        <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15"></polyline>
+                        <line x1="9" y1="4" x2="9" y2="17"></line>
+                        <line x1="15" y1="15" x2="15" y2="20"></line>
+                     </svg>
+                  </div>
+                  <div class="contact-box__info">
+                     <a href="https://goo.gl/maps/M4Q9wkPb5hxK3W5t6" class="contact-box__info--title">Bhubaneswar, India</a>
+                     <!-- <p class="contact-box__info--subtitle">NY 10012, US</p> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- START THE SOCIAL MEDIA CONTENT  -->
+         <div class="footer-sm" style="background-color: #212121">
+            <div class="container">
+               <div class="row py-4 text-center text-white">
+                  <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+                     connect with us on social media
+                  </div>
+                  <div class="col-lg-7 col-md-6">
+                     <!-- <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a> -->
+                     <!-- <a href=""><i class="fab fa-linkedin"></i></a> -->
+                     <a href="https://www.instagram.com/clinnov_it/"><i class="fab fa-instagram"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- START THE CONTENT FOR THE CAMPANY INFO -->
+         <!-- <div class="container mt-5">
+            <div class="row text-white justify-content-center mt-3 pb-3">
+              <div class="col-12 col-sm-6 col-lg-6 mx-auto">
+                <h5 class="text-capitalize fw-bold">Campany name</h5>
+                <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px" />
+                <p class="lh-lg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                  ex obcaecati blanditiis reprehenderit ab mollitia voluptatem
+                  consectetur?
+                </p>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+                <h5 class="text-capitalize fw-bold">Products</h5>
+                <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px" />
+                <ul class="list-inline campany-list">
+                  <li>
+                    <a href="#">Lorem ipsum</a>
+                  </li>
+                  <li>
+                    <a href="#">Lorem ipsum</a>
+                  </li>
+                  <li>
+                    <a href="#">Lorem ipsum</a>
+                  </li>
+                  <li>
+                    <a href="#">Lorem ipsum</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+                <h5 class="text-capitalize fw-bold">useful links</h5>
+                <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px" />
+                <ul class="list-inline campany-list">
+                  <li>
+                    <a href="#">
+                      Your Account</a>
+                  </li>
+                  <li>
+                    <a href="#">Become an Affiliate</a>
+                  </li>
+                  <li>
+                    <a href="#">create an account</a>
+                  </li>
+                  <li><a href="#">Help</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+                <h5 class="text-capitalize fw-bold">contact</h5>
+                <hr class="bg-white d-inline-block mb-4" style="width: 60px; height: 2px" />
+                <ul class="list-inline campany-list">
+                  <li>
+                    <a href="#">Lorem ipsum</a>
+                  </li>
+                  <li>
+                    <a href="#">Lorem ipsum</a>
+                  </li>
+                  <li>
+                    <a href="#">Lorem ipsum</a>
+                  </li>
+                  <li>
+                    <a href="#">Lorem ipsum</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </div> -->
+         <!-- START THE COPYRIGHT INFO  -->
+         <div class="footer-bottom pt-5 pb-5">
+            <div class="container">
+               <div class="row text-center text-white">
+                  <div class="col-12">
+                     <div class="footer-bottom__copyright">
+                        © Copyright 2023
+                        <a href="#">CLInnovIT</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- BACK TO TOP BUTTON  -->
+      <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+      <i class="fas fa-chevron-up"></i>
+      </a>
+      <script src="Styles/glightbox.min.js.download"></script>
+      <!-- <script type="text/javascript">
+         const lightbox = GLightbox({
+           'touchNavigation': true,
+           //      'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+           'type': 'video',
+           'source': 'youtube', //vimeo, youtube or local
+           'width': 900,
+           'autoPlayVideos': 'true',
+         });
+         
+         </script> -->
+      <script src="./Styles/bootstrap.bundle.min.js.download"></script>
+      <script src="https://kit.fontawesome.com/00775a0389.js" crossorigin="anonymous"></script>
+      <script src="circular_slider/js/circular-slider.js"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+      <style>
+         .circular-slider {
+         width: 100%;
+         height: 100%;
+         overflow: hidden;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         justify-content: center;
+         -webkit-box-align: end;
+         -ms-flex-align: end;
+         align-items: flex-end;
+         background-color: #122266;
+         background-image: url(/Images/blur_back.png);
+         }
+         .circular-slider .wrapper {
+         background-color: #FFF;
+         }
+         .circular-slider .wrapper .controls__left,
+         .circular-slider .wrapper .controls__right,
+         .circular-slider .wrapper .controls__autoplay {
+         position: absolute;
+         z-index: 101;
+         -webkit-transition: .6s all;
+         -o-transition: .6s all;
+         transition: .6s all;
+         }
+         .circular-slider .wrapper .controls__left:hover .icon-wrapper,
+         .circular-slider .wrapper .controls__right:hover .icon-wrapper,
+         .circular-slider .wrapper .controls__autoplay:hover .icon-wrapper {
+         font-size: 1.7em;
+         opacity: 1;
+         }
+         .circular-slider .wrapper .controls__left .icon-wrapper,
+         .circular-slider .wrapper .controls__right .icon-wrapper,
+         .circular-slider .wrapper .controls__autoplay .icon-wrapper {
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         justify-content: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+         width: 100%;
+         height: 100%;
+         color: #8EB8E5;
+         font-size: 1.5em;
+         opacity: .7;
+         }
+         .circular-slider .wrapper .controls__left,
+         .circular-slider .wrapper .controls__right {
+         top: 50%;
+         }
+         .circular-slider .wrapper .controls__left {
+         left: 0;
+         -webkit-transform: translateY(-50%);
+         -ms-transform: translateY(-50%);
+         transform: translateY(-50%);
+         }
+         .circular-slider .wrapper .controls__left:hover {
+         left: 0;
+         }
+         .circular-slider .wrapper .controls__right {
+         right: 0;
+         -webkit-transform: translate(0%, -50%);
+         -ms-transform: translate(0%, -50%);
+         transform: translate(0%, -50%);
+         }
+         .circular-slider .wrapper .controls__autoplay {
+         bottom: 0;
+         left: 50%;
+         -webkit-transform: translate(-50%, 0%);
+         -ms-transform: translate(-50%, 0%);
+         transform: translate(-50%, 0%);
+         }
+         .circular-slider .wrapper .controls__autoplay_running .pause {
+         display: block;
+         }
+         .circular-slider .wrapper .controls__autoplay_running .run {
+         display: none;
+         }
+         .circular-slider .wrapper .controls__autoplay_paused .pause {
+         display: none;
+         }
+         .circular-slider .wrapper .controls__autoplay_paused .run {
+         display: block;
+         }
+         .circular-slider .wrapper .slides-holder {
+         border-radius: 50%;
+         border: 2px dotted black;
+         -webkit-transform-origin: center;
+         -ms-transform-origin: center;
+         transform-origin: center;
+         -webkit-box-sizing: border-box;
+         box-sizing: border-box;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         justify-content: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+         position: relative;
+         z-index: 100;
+         }
+         .circular-slider .wrapper .slides-holder__item {
+         position: absolute;
+         -webkit-box-sizing: border-box;
+         box-sizing: border-box;
+         -webkit-transform-origin: center;
+         -ms-transform-origin: center;
+         transform-origin: center;
+         -webkit-transition: .3s linear all;
+         -o-transition: .3s linear all;
+         transition: .3s linear all;
+         -webkit-filter: brightness(100%);
+         filter: brightness(100%);
+         }
+         .circular-slider .wrapper .slides-holder__item img {
+         width: 100%;
+         height: 100%;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+         }
+         .circular-slider .wrapper .slides-holder__item_active {
+         -webkit-filter: brightness(100%);
+         filter: brightness(100%);
+         }
+         .circular-slider .wrapper .descriptions {
+         position: absolute;
+         bottom: 0%;
+         z-index: 0;
+         }
+         .circular-slider .wrapper .descriptions__item {
+         width: 100%;
+         height: 0%;
+         opacity: 0;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+         flex-direction: column;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         align-items: center;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         justify-content: center;
+         -webkit-transition: opacity 0s 0s linear;
+         -o-transition: opacity 0s 0s linear;
+         transition: opacity 0s 0s linear;
+         }
+         .circular-slider .wrapper .descriptions__item_visible {
+         height: 100%;
+         opacity: 1;
+         -webkit-transition: opacity .6s 0s linear;
+         -o-transition: opacity .6s 0s linear;
+         transition: opacity .6s 0s linear;
+         }
+         .circular-slider .wrapper .descriptions__item h1,
+         .circular-slider .wrapper .descriptions__item .description {
+         font-family: Helvetica, sans-serif;
+         color: black;
+         text-align: center;
+         font-size: 50px;
+         }
+         .circular-slider .wrapper .descriptions__item h1 {
+         font-size: 30px;
+         padding-top: 5px;
+         }
+         .circular-slider .wrapper .descriptions__item .description {
+         font-size: 20px;
+         margin-top: 5px;
+         padding: 0% 10%;
+         -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+         overflow-y: hidden;
+         }
+         .heading {
+         width: 100%;
+         }
+         .slider {
+         width: 100%;
+         padding: 0;
+         }
+         a {
+         text-decoration: none;
+         }
+         #container4 h2 {
+         font-size: 32px;
+         }
+         @media (max-width: 576px) {
+         .slider {
+         /* width: 33%; */
+         padding: 0;
+         }
+         .circular-slider .wrapper .descriptions__item h1 {
+         font-size: 20px;
+         padding-top: 45px;
+         }
+         .heading {
+         width: 100%;
+         }
+         #container4 ul {
+         list-style: none;
+         display: block;
+         flex-wrap: wrap;
+         text-align: center;
+         }
+         #container4 {
+         padding: 3rem;
+         }
+         #container4 h2 {
+         font-size: 24px;
+         }
+         }
+         #more {display: none;}
+         #termsAndConditions {
+         background-color: #f9f9f9;
+         padding: 20px;
+         margin: 20px;
+         border-radius: 5px;
+         }
+         h2,h3 {
+         font-size: 20px;
+         margin-top: 0;
+         }
+         p {
+         font-size: 16px;
+         line-height: 1.5;
+         }
+         /* Add some spacing between paragraphs */
+         p + p {
+         margin-top: 10px;
+         }
+         .tnc-container{
+         width: 100%;
+         padding-right: var(--bs-gutter-x, 0.75rem);
+         padding-left: var(--bs-gutter-x, 0.75rem);
+         margin-right: auto;
+         margin-left: auto;
+         padding: 7%;
+         }
+         .flx{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         }
+         /* Styling for the "Read more" button */
+         #myBtn {
+         background-color: #007bff;
+         color: #fff;
+         border: none;
+         padding: 10px 20px;
+         border-radius: 5px;
+         cursor: pointer;
+         }
+         #myBtn:hover {
+         background-color: #0056b3;
+         }
+         /* Styling for the "Read More" text */
+         #dots {
+         display: inline;
+         }
+         #more {
+         display: none;
+         }
+         #myPolicyBtn {
+         background-color: #007bff;
+         color: #fff;
+         border: none;
+         padding: 10px 20px;
+         border-radius: 5px;
+         cursor: pointer;
+         }
+         #myPolicyBtn:hover {
+         background-color: #0056b3;
+         }
+         /* Styling for the "Read More" text */
+         #pdots {
+         display: inline;
+         }
+         #pmore {
+         display: none;
+         }
+         /* Media queries for responsiveness */
+         @media screen and (max-width: 768px) {
+         #termsAndConditions {
+         padding: 10px;
+         }
+         h2,h3 {
+         font-size: 16px;
+         }
+         p {
+         font-size: 12px;
+         }
+         }
+      </style>
+      <script src="js/HorizonStackedSlides.js"></script>
+      <script src="index.js"></script>
+      <!-- <script src="index2.js"></script> -->
+      <script>
+         var sn = new Slider(document.querySelector('.circular-slider-1'), 100, 15, 600, 2500);
+         
+         // Slider.prototype.setSize(8000)
+      </script>
+      <script src="./Styles/bootstrap.bundle.min.js.download"></script>
+      <script src="https://kit.fontawesome.com/00775a0389.js" crossorigin="anonymous"></script>
+      <script>
+         function myFunction() {
+         var dots = document.getElementById("dots");
+         var moreText = document.getElementById("more");
+         var btnText = document.getElementById("myBtn");
+         
+         if (dots.style.display === "none" || dots.style.display === "") {
+                     dots.style.display = "inline";
+                     btnText.innerHTML = "Read more";
+                     moreText.style.display = "none";
+                 } else {
+                     dots.style.display = "none";
+                     btnText.innerHTML = "Read less";
+                     moreText.style.display = "inline";
+                 }
+         }
+      </script>
+      <script>
+         function myPolicy() {
+         var dots = document.getElementById("pdots");
+         var moreText = document.getElementById("pmore");
+         var btnText = document.getElementById("myPolicyBtn");
+         
+         if (dots.style.display === "none" || dots.style.display === "") {
+                     dots.style.display = "inline";
+                     btnText.innerHTML = "Read more";
+                     moreText.style.display = "none";
+                 } else {
+                     dots.style.display = "none";
+                     btnText.innerHTML = "Read less";
+                     moreText.style.display = "inline";
+                 }
+         }
+      </script>
+      <script>
+         /* call function on window scroll */
+         window.onscroll = function () {
+         
+           /* height scrolled from top */
+           var scrolled_top = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+         
+           /* total scrollable height */
+           var to_scroll = (document.documentElement.scrollHeight || document.body.scrollHeight) - (document.documentElement.clientHeight || document.body.clientHeight || window.innerHeight)
+         
+           /* percentage of height scrolled */
+           var horizontal_width = (scrolled_top / to_scroll) * 100;
+         
+           /* assigning calculated width to progress bar */
+           document.getElementById('myBar').style.width = horizontal_width + '%';
+         }
+      </script>
+   </body>
 </html>

@@ -21,7 +21,7 @@ li ,a{
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    color:#FFFFFF8C;
+    /* color:#FFFFFF8C; */
     text-decoration:none;
     cursor: pointer;
 }
