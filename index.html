@@ -103,7 +103,7 @@
             </div>
          </div>
       </div>
-      <div class="animation2">
+      <!-- <div class="animation2">
          <br>
          <h1 id="h1line" style="color: white;">WHAT WE HAVE ACHIEVED</h1>
          <div class="container2" id="sliderContainer">
@@ -126,7 +126,35 @@
                </div>
             </span>
          </div>
-      </div>
+      </div> -->
+
+      <div class="animation2">
+         <br>
+         <h1 id="h1line" style="color: white;">WHAT WE HAVE ACHIEVED</h1>
+         <div class="containerr2" id="sliderContainerr">
+             <div class="cardd-container">
+                 <span class="slidexx cardd cardd-left">
+                     <div class="cardd-item">
+                         <p class="inc">Increased</p>
+                         <span class="tenx">10x <span class="in" style="color: black;font-size: 2rem;">in<br><span class="ctr" style="color: black;">CTR</span></span></span>
+                     </div>
+                 </span>
+                 <span class="slidexx cardd cardd-center">
+                     <div class="cardd-item">
+                         <p class="inc">Increased</p>
+                         <span class="tenx">2.5x <span class="in" style="color: black;font-size: 2rem;">in<br><span class="ctr" style="color: black;font-size: 2rem;">User Engagement Time</span></span></span>
+                     </div>
+                 </span>
+                 <span class="slidexx cardd cardd-right">
+                     <div class="cardd-item">
+                             <p class="inc">Increased</p>
+                             <span class="tenx">10x <span class="in" style="color: black;font-size: 2rem;">in<br><span class="ctr" style="color: black;">Conversion</span></span></span>
+                     </div>
+                 </span>
+             </div>
+         </div>
+     </div>
+
       <div class="slider">
          <div class="heading">
             <br>
@@ -434,7 +462,7 @@
       <section id="termsAndConditions" class="terms-and-conditions">
          <div class="tnc-container">
          <div class="row text-center">
-            <h1 class="display-3 fw-bold text-capitalize" style=" color:#0d6efd;">Terms and Conditions</h1>
+            <h1 class="display-3 fw-bold text-capitalize" style=" color:#122266;">Terms and Conditions</h1>
             <div class="heading-line"></div>
             <!-- <p class="lh-lg">
                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
@@ -460,7 +488,6 @@
                <li>Reproduce, duplicate or copy material from CLInnovIT</li>
                <li>Redistribute content from CLInnovIT</li>
             </ul>
-            <p>This Agreement shall begin on the date hereof. Our Terms and Conditions were created with the help of the <a href="https://www.termsandconditionsgenerator.com/">Free Terms and Conditions Generator</a>.</p>
             <p>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. CLInnovIT does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of CLInnovIT,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, CLInnovIT shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.</p>
             <p>CLInnovIT reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.</p>
             <p>You warrant and represent that:</p>
@@ -532,7 +559,7 @@
       <section id="termsAndConditions" class="terms-and-conditions">
          <div class="tnc-container">
             <div class="row text-center">
-               <h1 class="display-3 fw-bold text-capitalize" style=" color:#0d6efd;">Privacy Policy</h1>
+               <h1 class="display-3 fw-bold text-capitalize" style=" color: #122266;">Privacy Policy</h1>
                <div class="heading-line"></div>
                <!-- <p class="lh-lg">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
@@ -610,7 +637,7 @@
       <section id="contact" class="get-started">
          <div class="container">
             <div class="row text-center">
-               <h1 class="display-3 fw-bold text-capitalize" style=" color:#0d6efd;">Get started</h1>
+               <h1 class="display-3 fw-bold text-capitalize" style=" color: #122266;">Get started</h1>
                <div class="heading-line"></div>
                <!-- <p class="lh-lg">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
@@ -1044,6 +1071,7 @@
          a {
          text-decoration: none;
          }
+
          #container4 h2 {
          font-size: 32px;
          }
@@ -1106,7 +1134,7 @@
          }
          /* Styling for the "Read more" button */
          #myBtn {
-         background-color: #007bff;
+         background-color: #122266;
          color: #fff;
          border: none;
          padding: 10px 20px;
@@ -1124,7 +1152,7 @@
          display: none;
          }
          #myPolicyBtn {
-         background-color: #007bff;
+         background-color: #122266;
          color: #fff;
          border: none;
          padding: 10px 20px;
@@ -1153,6 +1181,124 @@
          font-size: 12px;
          }
          }
+         .animation2 {
+    padding: 20px;
+    text-align: center;
+    background-color: #14213d;
+}
+.containerr2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardd-container {
+    display: flex;
+    position: relative;
+}
+
+/* Styling for individual slides */
+.cardd {
+    width: 400px; /* Set a fixed width for each card */
+    height: 300px; /* Set a fixed height for each card */
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: white; /* Change background color to white */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    cursor: pointer;
+    filter: blur(5px); /* Blur all cards initially */
+    position: relative; /* Add relative positioning */
+    color: black; /* Set text color to black */
+    margin: 0 10px; /* Add some space between cards */
+    z-index: 1; /* All cards initially have the same z-index */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.cardd-center {
+    width: 400px; /* Make the center card wider */
+    height: 300px; /* Make the center card taller */
+    z-index: 2; /* Bring the center card to the top initially */
+}
+
+.cardd:hover {
+    transform: scale(1.1); /* Scale up the hovered card */
+    filter: none; /* Remove blur when hovered over */
+    z-index: 3; /* Bring the hovered card to the top */
+    border-width: 2px;
+    border-color: #212121;
+}
+
+.cardd-left, .cardd-right {
+    width: 400px; /* Keep left and right cards the same size as the center card */
+    height: 300px;
+}
+
+.cardd-left:hover, .cardd-right:hover {
+    transform: scale(1.1); /* Scale up the hovered card */
+    filter: none; /* Remove blur when hovered over */
+    z-index: 3; /* Bring the hovered card to the top */
+}
+
+.cardd-left:hover {
+    transform: translateX(50px) scale(1.1); /* Move the hovered left card to the center and scale it up */
+}
+
+.cardd-right:hover {
+    transform: translateX(-50px) scale(1.1); /* Move the hovered right card to the center and scale it up */
+}
+
+/* Styling for slidex content */
+.cardd .cardd-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.cardd .cardd-item span {
+    font-size: 4rem; /* Increase the font size */
+    font-weight: bold;
+    color: #fca311; /* Change the color to #fca311 (orange) */
+    /* writing-mode: vertical-rl; Rotate text vertically */
+    text-orientation: upright; /* Ensure upright text orientation */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.cardd .cardd-item p {
+    /* font-size: 25px; Increase the font size to cover the whole card */
+    margin: 0;
+}
+.inc{
+        font-size: 4rem;
+    }
+.in{
+    font-size: 2rem;
+    color: black;
+}
+
+/* Media query for responsive styles on mobile screens */
+@media (max-width: 768px) {
+    .animation2 {
+        padding: 10px;
+    }
+    .container2 {
+        flex-direction: column; /* Display cards in a column on mobile screens */
+    }
+    .card {
+        width: 100%; /* Make cards full width on mobile screens */
+        height: auto; /* Adjust height to fit content */
+        margin: 0 0 10px 0; /* Add margin at the bottom */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
       </style>
       <script src="js/HorizonStackedSlides.js"></script>
       <script src="index.js"></script>
@@ -1164,6 +1310,16 @@
       </script>
       <script src="./Styles/bootstrap.bundle.min.js.download"></script>
       <script src="https://kit.fontawesome.com/00775a0389.js" crossorigin="anonymous"></script>
+      <script>
+         const cards = document.querySelectorAll('.card');
+   
+   cards.forEach(card => {
+       card.addEventListener('mouseenter', () => {
+           cards.forEach(c => c.classList.remove('card-center'));
+           card.classList.add('card-center');
+       });
+   });
+       </script>
       <script>
          function myFunction() {
          var dots = document.getElementById("dots");
